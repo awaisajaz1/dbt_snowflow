@@ -107,6 +107,25 @@ schema: staging
 threads: 10
 ```
 
+### Configure `dbt/profiles.yml`
+You will need to populate `profiles.yml` with your Snowflake credentials.  
+Example:
+```yaml
+dbt_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "<your_snowflake_account>"
+      user: "<your_username>"
+      password: "<your_password>"
+      role: dbt_role
+      warehouse: compute_wh
+      database: dbt_dwh
+      schema: staging
+      threads: 10
+```
+
 ### Install dbt Packages
 Create `packages.yml`:
 ```yaml

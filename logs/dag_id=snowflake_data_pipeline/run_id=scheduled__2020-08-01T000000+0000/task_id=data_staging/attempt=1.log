@@ -1,0 +1,53 @@
+[2025-03-04T07:14:26.684+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-04T07:14:26.831+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: snowflake_data_pipeline.data_staging scheduled__2020-08-01T00:00:00+00:00 [queued]>
+[2025-03-04T07:14:26.838+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: snowflake_data_pipeline.data_staging scheduled__2020-08-01T00:00:00+00:00 [queued]>
+[2025-03-04T07:14:26.849+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-04T07:14:26.861+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): data_staging> on 2020-08-01 00:00:00+00:00
+[2025-03-04T07:14:26.868+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=985) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-04T07:14:26.870+0000] {standard_task_runner.py:72} INFO - Started process 988 to run task
+[2025-03-04T07:14:26.870+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'snowflake_data_pipeline', 'data_staging', 'scheduled__2020-08-01T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmpxhjxquk2']
+[2025-03-04T07:14:26.872+0000] {standard_task_runner.py:105} INFO - Job 8: Subtask data_staging
+[2025-03-04T07:14:26.884+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-03-04T07:14:26.919+0000] {task_command.py:467} INFO - Running <TaskInstance: snowflake_data_pipeline.data_staging scheduled__2020-08-01T00:00:00+00:00 [running]> on host 8b83efa08de4
+[2025-03-04T07:14:26.920+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2025-03-04T07:14:27.004+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='snowflake_data_pipeline' AIRFLOW_CTX_TASK_ID='data_staging' AIRFLOW_CTX_EXECUTION_DATE='2020-08-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2020-08-01T00:00:00+00:00'
+[2025-03-04T07:14:27.006+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-04T07:14:27.007+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-04T07:14:27.008+0000] {logging_mixin.py:190} INFO - Current task name:data_staging state:running start_date:2025-03-04 07:14:26.832155+00:00
+[2025-03-04T07:14:27.008+0000] {logging_mixin.py:190} INFO - Dag name:snowflake_data_pipeline and current dag run status:running
+[2025-03-04T07:14:27.009+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-04T07:14:27.010+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-04T07:14:27.011+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt && dbt run --models staging --profiles-dir .']
+[2025-03-04T07:14:27.021+0000] {subprocess.py:99} INFO - Output:
+[2025-03-04T07:14:29.163+0000] {subprocess.py:106} INFO - [0m07:14:29  Running with dbt=1.9.2
+[2025-03-04T07:14:30.299+0000] {subprocess.py:106} INFO - [0m07:14:30  Registered adapter: snowflake=1.9.1
+[2025-03-04T07:14:31.962+0000] {subprocess.py:106} INFO - [0m07:14:31  Found 5 models, 8 data tests, 5 sources, 589 macros
+[2025-03-04T07:14:31.967+0000] {subprocess.py:106} INFO - [0m07:14:31
+[2025-03-04T07:14:31.968+0000] {subprocess.py:106} INFO - [0m07:14:31  Concurrency: 10 threads (target='dev')
+[2025-03-04T07:14:31.969+0000] {subprocess.py:106} INFO - [0m07:14:31
+[2025-03-04T07:14:33.804+0000] {subprocess.py:106} INFO - [0m07:14:33  1 of 2 START sql incremental model staging.city_stage .......................... [RUN]
+[2025-03-04T07:14:35.717+0000] {subprocess.py:106} INFO - [0m07:14:35  1 of 2 OK created sql incremental model staging.city_stage ..................... [[32mSUCCESS 3[0m in 1.91s]
+[2025-03-04T07:14:35.723+0000] {subprocess.py:106} INFO - [0m07:14:35  2 of 2 START sql view model staging.customers_stage ............................ [RUN]
+[2025-03-04T07:14:36.600+0000] {subprocess.py:106} INFO - [0m07:14:36  2 of 2 OK created sql view model staging.customers_stage ....................... [[32mSUCCESS 1[0m in 0.87s]
+[2025-03-04T07:14:37.221+0000] {subprocess.py:106} INFO - [0m07:14:37
+[2025-03-04T07:14:37.222+0000] {subprocess.py:106} INFO - [0m07:14:37  Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 5.25 seconds (5.25s).
+[2025-03-04T07:14:37.371+0000] {subprocess.py:106} INFO - [0m07:14:37
+[2025-03-04T07:14:37.373+0000] {subprocess.py:106} INFO - [0m07:14:37  [32mCompleted successfully[0m
+[2025-03-04T07:14:37.374+0000] {subprocess.py:106} INFO - [0m07:14:37
+[2025-03-04T07:14:37.376+0000] {subprocess.py:106} INFO - [0m07:14:37  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2025-03-04T07:14:39.314+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-04T07:14:39.352+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-04T07:14:39.354+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=snowflake_data_pipeline, task_id=data_staging, run_id=scheduled__2020-08-01T00:00:00+00:00, execution_date=20200801T000000, start_date=20250304T071426, end_date=20250304T071439
+[2025-03-04T07:14:39.397+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-04T07:14:39.398+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-04T07:14:39.399+0000] {logging_mixin.py:190} INFO - Dag name:snowflake_data_pipeline queued_at:2025-03-04 07:14:24.731448+00:00
+[2025-03-04T07:14:39.400+0000] {logging_mixin.py:190} INFO - Task hostname:8b83efa08de4 operator:BashOperator
+[2025-03-04T07:14:39.430+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-04T07:14:39.469+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-04T07:14:39.472+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

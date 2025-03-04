@@ -1,0 +1,92 @@
+[2025-03-04T07:13:39.884+0000] {processor.py:186} INFO - Started process (PID=3153) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:13:39.885+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:13:39.886+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:39.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:13:39.903+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:13:39.986+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:39.985+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:snowflake_data_pipeline
+[2025-03-04T07:13:39.992+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:39.992+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:snowflake_data_pipeline
+[2025-03-04T07:13:39.997+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:39.997+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:snowflake_data_pipeline
+[2025-03-04T07:13:40.001+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.001+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:snowflake_data_pipeline
+[2025-03-04T07:13:40.005+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.005+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:snowflake_data_pipeline
+[2025-03-04T07:13:40.009+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.009+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:snowflake_data_pipeline
+[2025-03-04T07:13:40.014+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.013+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:snowflake_data_pipeline
+[2025-03-04T07:13:40.014+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.014+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:13:40.022+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.022+0000] {dag.py:3262} INFO - Creating ORM DAG for snowflake_data_pipeline
+[2025-03-04T07:13:40.029+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:13:40.029+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to 2020-08-01 00:00:00+00:00, run_after=2020-08-01 00:00:00+00:00
+[2025-03-04T07:13:40.042+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.163 seconds
+[2025-03-04T07:14:10.236+0000] {processor.py:186} INFO - Started process (PID=3226) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:10.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:14:10.241+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:10.240+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:10.275+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:10.299+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:10.299+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:14:10.327+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:10.326+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to 2020-08-01 00:00:00+00:00, run_after=2020-08-01 00:00:00+00:00
+[2025-03-04T07:14:10.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.123 seconds
+[2025-03-04T07:14:40.515+0000] {processor.py:186} INFO - Started process (PID=3316) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:40.517+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:14:40.519+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:40.519+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:40.549+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:14:40.574+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:40.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:14:40.602+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:14:40.602+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:14:40.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.124 seconds
+[2025-03-04T07:15:10.765+0000] {processor.py:186} INFO - Started process (PID=3390) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:10.766+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:15:10.768+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:10.767+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:10.797+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:10.815+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:10.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:15:10.834+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:10.834+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:15:10.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.091 seconds
+[2025-03-04T07:15:40.948+0000] {processor.py:186} INFO - Started process (PID=3464) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:40.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:15:40.951+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:40.950+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:40.972+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:15:40.995+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:40.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:15:41.023+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:15:41.023+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:15:41.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.098 seconds
+[2025-03-04T07:16:11.694+0000] {processor.py:186} INFO - Started process (PID=3546) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:11.695+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:16:11.697+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:11.697+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:11.729+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:11.749+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:11.748+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:16:11.772+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:11.772+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:16:11.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.105 seconds
+[2025-03-04T07:16:42.291+0000] {processor.py:186} INFO - Started process (PID=3620) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:42.293+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:16:42.296+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:42.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:42.325+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:16:42.350+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:42.350+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:16:42.379+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:16:42.379+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:16:42.403+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.117 seconds
+[2025-03-04T07:17:12.793+0000] {processor.py:186} INFO - Started process (PID=3702) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:12.794+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:17:12.795+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:12.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:12.817+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:12.833+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:12.833+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:17:12.850+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:12.850+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:17:12.864+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.076 seconds
+[2025-03-04T07:17:43.146+0000] {processor.py:186} INFO - Started process (PID=3774) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:43.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:17:43.155+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:43.155+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:43.179+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:43.194+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:43.194+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:17:43.212+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:43.212+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:17:43.231+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.089 seconds
+[2025-03-04T07:17:44.816+0000] {processor.py:186} INFO - Started process (PID=3784) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:44.817+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:17:44.819+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:44.818+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:44.859+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:44.876+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:44.876+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:17:44.895+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:44.895+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:17:44.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.108 seconds
+[2025-03-04T07:17:45.851+0000] {processor.py:186} INFO - Started process (PID=3792) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:45.852+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:17:45.854+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:45.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:45.889+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:17:45.910+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:45.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:17:45.932+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:17:45.931+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:17:45.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.111 seconds
+[2025-03-04T07:18:16.127+0000] {processor.py:186} INFO - Started process (PID=3867) to work on /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:18:16.128+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-03-04T07:18:16.129+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:18:16.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:18:16.144+0000] {processor.py:925} INFO - DAG(s) 'snowflake_data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-03-04T07:18:16.160+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:18:16.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-04T07:18:16.180+0000] {logging_mixin.py:190} INFO - [2025-03-04T07:18:16.180+0000] {dag.py:4180} INFO - Setting next_dagrun for snowflake_data_pipeline to None, run_after=None
+[2025-03-04T07:18:16.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 0.076 seconds

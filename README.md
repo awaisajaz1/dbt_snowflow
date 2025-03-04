@@ -107,6 +107,24 @@ schema: staging
 threads: 10
 ```
 
+### Install dbt Packages
+Create `packages.yml`:
+```yaml
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0
+```
+Install dependencies:
+```bash
+dbt deps
+```
+
+## 4️⃣ Running dbt Models in local machine
+Run dbt models:
+```bash
+dbt run --models staging
+```
+
 ### Configure `dbt/profiles.yml`
 You will need to populate `profiles.yml` with your Snowflake credentials.  
 Example:
@@ -124,24 +142,6 @@ dbt_snowflake:
       database: dbt_dwh
       schema: staging
       threads: 10
-```
-
-### Install dbt Packages
-Create `packages.yml`:
-```yaml
-packages:
-  - package: dbt-labs/dbt_utils
-    version: 1.3.0
-```
-Install dependencies:
-```bash
-dbt deps
-```
-
-## 4️⃣ Running dbt Models
-Run dbt models:
-```bash
-dbt run --models staging
 ```
 
 ## 5️⃣ Deploy with Docker & Airflow

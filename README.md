@@ -15,7 +15,7 @@ CREATE DATABASE dbt_dwh;
 CREATE ROLE dbt_role;
 
 GRANT USAGE ON WAREHOUSE compute_wh TO ROLE dbt_role;
-GRANT ROLE dbt_role TO USER AWAISAJAZ1;
+GRANT ROLE dbt_role TO USER <Your User>;
 GRANT ALL ON DATABASE dbt_dwh TO ROLE dbt_role;
 
 USE ROLE dbt_role;
